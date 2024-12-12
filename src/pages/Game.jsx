@@ -96,7 +96,7 @@ export const Game = () => {
   
       <div className="m-20 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center gap-5 ">
-          <img onClick={handleDice} className="w-24" src={`/src/assets/${diceImg || "one side.png"}`} alt="Dice image could not be showing due to network error" />
+          <img onClick={handleDice} className="w-24" src={`/${diceImg || "one side.png"}`} alt="Dice image could not be showing due to network error" />
           <p>{loading? "Loading...":"Click on Dice roll"}</p>
           <button onClick={handleResetBtn}  className="bg-white h-8 w-36 text-black border-2 border-black">Reset score</button>
           <button onClick={handleRuleShow} className="bg-black h-8 w-36 text-white">Show Rules</button>
